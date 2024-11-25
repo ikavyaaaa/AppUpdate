@@ -10,6 +10,7 @@ import UIKit
 
 enum AppStoryboard: String {
     case login = "Login"
+    case update = "Update"
     
     var instance: UIStoryboard {
         return UIStoryboard(name: self.rawValue, bundle: Bundle.main)
