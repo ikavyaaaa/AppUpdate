@@ -18,6 +18,7 @@ Implementation Details
 Step 1: Fetching App Store Version
 Use the App Store API or iTunes Lookup API to fetch the app details:
 
+```
 let appStoreURL = "https://itunes.apple.com/lookup?bundleId=com.yourcompany.yourapp"
 
 
@@ -27,6 +28,7 @@ Compare the current app version (retrieved using Bundle.main.infoDictionary) wit
 Step 3: Display Alert
 Show an alert to the user if a new version is available:
 
+```
 let alert = UIAlertController(
     title: "Update Available",
     message: "A new version of the app is available on the App Store. Please update to enjoy the latest features.",
@@ -43,6 +45,7 @@ present(alert, animated: true, completion: nil)
 
 Example Code
 
+```
 import UIKit
 
 class AppUpdateChecker {
@@ -80,6 +83,8 @@ class AppUpdateChecker {
 }
 
 // Usage Example
+
+```
 AppUpdateChecker.checkForUpdate { isUpdateAvailable, appStoreVersion in
     if isUpdateAvailable {
         DispatchQueue.main.async {
