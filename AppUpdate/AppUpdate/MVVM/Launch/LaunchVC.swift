@@ -18,41 +18,51 @@ class LaunchVC: UIViewController {
         UIView.animate(withDuration: 1.0, delay: 0, options: [], animations: {
             self.imgVwLogo.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }, completion:  nil)
-        kSceneDelegate?.setLogin()
-    }
-
-}
-
-
-func checkForUpdate() {
-    guard let bundleID = Bundle.main.bundleIdentifier else {
-        self.setLogin()
-        return
+        
+        self.checkForUpdate()
     }
     
-    let appStoreURL = URL(string: "https://itunes.apple.com/\(Locale.current.regionCode ?? "US")/lookup?bundleId=\(bundleID)")!
-    
-    let task = URLSession.shared.dataTask(with: appStoreURL) { [weak self] (data, response, error) in
-        if let data = data {
-            do {
-                let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                
-                if let results = json?["results"] as? [[String: Any]],
-                   let appStoreVersion = results.first?["version"] as? String,
-                   let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
-                    if appStoreVersion > currentVersion {
-                        CommonFunctions.showUpdate(self!)
+    func checkForUpdate() {
+        guard let bundleID = Bundle.main.bundleIdentifier else {
+            self.setLogin()
+            return
+        }
+        
+        let appStoreURL = URL(string: "https://itunes.apple.com/\(Locale.current.regionCode ?? "US")/lookup?bundleId=\(bundleID)")!
+        
+        let task = URLSession.shared.dataTask(with: appStoreURL) { [weak self] (data, response, error) in
+            if let data = data {
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                    
+                    if let results = json?["results"] as? [[String: Any]],
+                       let appStoreVersion = results.first?["version"] as? String,
+                       let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+                        if appStoreVersion > currentVersion {
+                            CommonFunctions.showUpdate(self!)
+                        } else {
+                            self?.setLogin()
+                        }
                     } else {
                         self?.setLogin()
                     }
-                } else {
+                } catch {
+                    print("Error parsing JSON: \(error)")
                     self?.setLogin()
                 }
-            } catch {
-                print("Error parsing JSON: \(error)")
-                self?.setLogin()
             }
         }
+        task.resume()
     }
-    task.resume()
+
+
+    
+    func setLogin() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: {
+            kSceneDelegate?.setLogin()
+        })
+    }
+    
 }
+
+
