@@ -18,6 +18,7 @@ class LaunchVC: UIViewController {
         UIView.animate(withDuration: 1.0, delay: 0, options: [], animations: {
             self.imgVwLogo.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }, completion:  nil)
+        kSceneDelegate?.setLogin()
     }
 
 }

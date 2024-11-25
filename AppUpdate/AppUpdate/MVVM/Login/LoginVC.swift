@@ -47,6 +47,10 @@ class LoginVC: UIViewController {
         }
     }
     
+    @IBAction func loginButtonClicked(_ button: TransitionButton) {
+        button.startAnimation()
+    }
+    
 
     // MARK: - Layout Updates
     
