@@ -50,13 +50,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="562"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whn-fz-s9e">
-                            <rect key="frame" x="156.33333333333334" y="156" width="80.333333333333343" height="39"/>
+                            <rect key="frame" x="156.66666666666666" y="156" width="79.666666666666657" height="37.333333333333343"/>
                             <fontDescription key="fontDescription" name="FONTSPRINGDEMO-ProximaNovaBold" family="FONTSPRING DEMO - Proxima Nova" pointSize="32"/>
-                            <color key="textColor" systemColor="systemRedColor"/>
+                            <color key="textColor" name="PrimaryColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email *" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-cb-raZ">
-                            <rect key="frame" x="30" y="252.99999999999997" width="333" height="46.666666666666657"/>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     Email *" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-cb-raZ">
+                            <rect key="frame" x="30" y="251.33333333333334" width="333" height="46.666666666666657"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="FONTSPRINGDEMO-ProximaNovaRegular" family="FONTSPRING DEMO - Proxima Nova" pointSize="15"/>
                             <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -71,8 +71,8 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password *" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7IE-dC-FZ9">
-                            <rect key="frame" x="30" y="313.66666666666669" width="333" height="46.666666666666686"/>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     Password *" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7IE-dC-FZ9">
+                            <rect key="frame" x="30" y="312" width="333" height="46.666666666666686"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="FONTSPRINGDEMO-ProximaNovaRegular" family="FONTSPRING DEMO - Proxima Nova" pointSize="15"/>
                             <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
@@ -87,13 +87,13 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJc-QT-6aJ" customClass="TransitionButton" customModule="ePrice_Label" customModuleProvider="target">
-                            <rect key="frame" x="30" y="390.33333333333331" width="333" height="38.333333333333314"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJc-QT-6aJ" customClass="TransitionButton" customModule="AppUpdate" customModuleProvider="target">
+                            <rect key="frame" x="30" y="388.66666666666669" width="333" height="38.333333333333314"/>
                             <color key="backgroundColor" name="ePriceDarkGralLight"/>
-                            <fontDescription key="fontDescription" name="FONTSPRINGDEMO-ProximaNovaBold" family="FONTSPRING DEMO - Proxima Nova" pointSize="15"/>
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Login">
-                                <color key="titleColor" systemColor="systemIndigoColor"/>
+                                <color key="titleColor" name="PrimaryColor"/>
                             </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -112,7 +112,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeE-pl-6Pb">
-                            <rect key="frame" x="123.66666666666669" y="444.66666666666669" width="146" height="29"/>
+                            <rect key="frame" x="123.66666666666669" y="443" width="146" height="29"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="FONTSPRINGDEMO-ProximaNovaRegular" family="FONTSPRING DEMO - Proxima Nova" pointSize="14"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -210,10 +210,10 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a9o-cG-VI2">
-                    <rect key="frame" x="59.666666666666657" y="762" width="273.66666666666674" height="30"/>
+                    <rect key="frame" x="59.666666666666657" y="763" width="273.66666666666674" height="29"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account? " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c3-er-Gkk">
-                            <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="30"/>
+                            <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="29"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="c3X-tt-gdo"/>
@@ -223,14 +223,14 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xff-Bx-Bhg">
-                            <rect key="frame" x="193.66666666666669" y="0.0" width="80" height="30"/>
+                            <rect key="frame" x="193.66666666666669" y="0.0" width="80" height="29"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="pwp-I1-iba"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="FONTSPRINGDEMO-ProximaNovaBold" family="FONTSPRING DEMO - Proxima Nova" pointSize="14"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Sign Up">
-                                <color key="titleColor" systemColor="systemPurpleColor"/>
+                                <color key="titleColor" name="SecondaryGradientCOlor"/>
                             </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -282,6 +282,12 @@
         <namedColor name="Gray">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="PrimaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryGradientCOlor">
+            <color red="0.12941176470588234" green="0.50588235294117645" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="White">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -296,12 +302,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
