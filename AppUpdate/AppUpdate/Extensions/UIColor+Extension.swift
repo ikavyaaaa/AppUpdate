@@ -13,6 +13,7 @@ extension UIColor {
         static var appUpdateBlue : UIColor  { return UIColor(named: "SecondaryGradientCOlor")! }
         static var appUpdateGreen : UIColor  { return UIColor(named: "PrimaryGradientColor")! }
         static var appUpdateWhite : UIColor  { return UIColor(named: "PrimaryColor")! }
+        static var appUpdateGray : UIColor  { return UIColor(named: "PrimaryBackgroundColor")! }
     }
     
     convenience init(hex: String, alpha: CGFloat = 1.0) {

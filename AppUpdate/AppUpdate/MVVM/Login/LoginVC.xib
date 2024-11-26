@@ -58,6 +58,7 @@
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     Email *" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-cb-raZ">
                             <rect key="frame" x="30" y="251.33333333333334" width="333" height="46.666666666666657"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="AccentColor"/>
                             <fontDescription key="fontDescription" name="FONTSPRINGDEMO-ProximaNovaRegular" family="FONTSPRING DEMO - Proxima Nova" pointSize="15"/>
                             <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             <userDefinedRuntimeAttributes>
@@ -71,10 +72,10 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     Password *" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7IE-dC-FZ9">
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     Password *" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7IE-dC-FZ9">
                             <rect key="frame" x="30" y="312" width="333" height="46.666666666666686"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" name="FONTSPRINGDEMO-ProximaNovaRegular" family="FONTSPRING DEMO - Proxima Nova" pointSize="15"/>
+                            <nil key="textColor"/>
                             <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="leftPadding" value="YES"/>
@@ -230,7 +231,7 @@
                             <fontDescription key="fontDescription" name="FONTSPRINGDEMO-ProximaNovaBold" family="FONTSPRING DEMO - Proxima Nova" pointSize="14"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Sign Up">
-                                <color key="titleColor" name="SecondaryGradientCOlor"/>
+                                <color key="titleColor" name="AccentColor"/>
                             </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -276,6 +277,9 @@
         <image name="facebook-app-symbol" width="26" height="26"/>
         <image name="ic-google" width="26" height="26"/>
         <image name="ic_apple" width="26" height="26"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="DarkBlue">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -284,9 +288,6 @@
         </namedColor>
         <namedColor name="PrimaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="SecondaryGradientCOlor">
-            <color red="0.12941176470588234" green="0.50588235294117645" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>

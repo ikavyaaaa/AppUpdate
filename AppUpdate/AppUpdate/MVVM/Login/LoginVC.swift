@@ -137,14 +137,14 @@ class LoginVC: UIViewController {
         btnGoogle.layer.cornerRadius = btnApple.frame.width / 2
         
         // Set a horizontal gradient background color for the main view with a corner radius of 10
-        viewMain.setGradientBackgroundColor(colors: [UIColor.Theme.appUpdateGreen, UIColor.Theme.appUpdateBlue], axis: .horizontal, cornerRadius: 10) { view in
+        viewMain.setGradientBackgroundColor(colors: [UIColor.Theme.appUpdateBlack, UIColor.Theme.appUpdateGray], axis: .horizontal, cornerRadius: 10) { view in
             // Ensure the view is a UIButton and bring the image view to the front
             guard let btn = view as? UIButton, let imageView = btn.imageView else { return }
             btn.bringSubviewToFront(imageView)
         }
         
         // Set a horizontal gradient background color for the login button with a corner radius of 10
-        btnLogin.setGradientBackgroundColor(colors: [UIColor.Theme.appUpdateGreen, UIColor.Theme.appUpdateBlue], axis: .horizontal, cornerRadius: 10) { view in
+        btnLogin.setGradientBackgroundColor(colors: [UIColor.Theme.appUpdateBlack, UIColor.Theme.appUpdateGray], axis: .horizontal, cornerRadius: 10) { view in
             // Ensure the view is a UIButton and bring the image view to the front
             guard let btn = view as? UIButton, let imageView = btn.imageView else { return }
             btn.bringSubviewToFront(imageView)

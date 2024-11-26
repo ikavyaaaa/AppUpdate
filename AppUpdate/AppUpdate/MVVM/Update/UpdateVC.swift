@@ -44,7 +44,7 @@ class UpdateVC: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        btnInstall.setGradientBackgroundColor(colors: [UIColor.Theme.appUpdateGreen, UIColor.Theme.appUpdateBlue], axis: .horizontal, cornerRadius: 10) { view in
+        btnInstall.setGradientBackgroundColor(colors: [UIColor.Theme.appUpdateBlack, UIColor.Theme.appUpdateGray], axis: .horizontal, cornerRadius: 10) { view in
             guard let btn = view as? UIButton, let imageView = btn.imageView else { return }
             btn.bringSubviewToFront(imageView)
         }
